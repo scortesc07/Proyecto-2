@@ -12,35 +12,35 @@
 </head>
 <body>
     <header>
-        <h1 class="header-title">Ingreso de Insumos</h1>
+        <h1 class="header-title">Gestión y Control de Materiales</h1>
     </header>
     <main>
-        <button type="button" class="button blue mobile" id="ingresoProducto">Ingresar Producto</button>
-        <table id="tablaProducto" class="records">
+        <button type="button" class="button blue mobile" id="ingresarProducto">Ingresar Productos</button>
+        <table id="tableProduct" class="records">
             <thead>
                 <tr>
                     <th>Producto</th>
                     <th>Cantidad</th>
                     <th>Precio</th>
                     <th>Instalación</th>
-                    <th>Observación</th>
+                    <th>Observaciones</th>
                 </tr>
             </thead>
-            <tbody>    
+            <tbody>
 
             </tbody>
-        </table> 
+        </table>
         
         <!-- Eliminar datos de la tabla utilizando modal-->
 
         <div class="modal" id="modal2">
-            <div class="modal-contenido">
+            <div class="modal-content">
                 <header class="modal-header">
                     <h2>Eliminar Producto</h2>
                     <span class="modal-close" id="modalClose2">&#10006;</span>
                 </header>
                 <div id='avisoDelete'>
-                    <!--Alerta de Delete-->
+                  
                 </div>
                 <footer class="modal-footer">
                     <button id="eliminar" class="button red">Eliminar</button>
@@ -51,17 +51,17 @@
 
         <!--Crear y editar Modal-->
 
-        <div claa="modal" id="modal">
-            <div class="modal-contenido">
+        <div class="modal" id="modal">
+            <div class="modal-content">
                 <header class="modal-header">
-                    <h2> Nuevo Producto</h2>
+                    <h2>Nuevo Producto</h2>
                     <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form id="form" class="modal-form">
-                    <input type="text" id="producto" class="modal-field" data-index="new" placeholder="Nombre Producto" required>
-                    <input type="text" id="cantidad" class="modal-field" placeholder="Cantidad" required>
-                    <input type="text" id="precio" class="modal-field" placeholder="Precio" required>
-                    <input type="text" id="instalacion" class="modal-field" placeholder="Instalación" required>
+                    <input type="text" id="producto" data-index="new" class="modal-field" placeholder="Nombre del producto" required>
+                    <input type="text" id="cantidad" class="modal-field" placeholder="Cantidad del producto" required>
+                    <input type="text" id="precio" class="modal-field" placeholder="Precio del producto" required>
+                    <input type="text" id="instalacion" class="modal-field" placeholder="Ingresar instalación" required>
                 </form>
                 <footer class="modal-footer">
                     <button id="guardar" class="button green">Guardar</button>
